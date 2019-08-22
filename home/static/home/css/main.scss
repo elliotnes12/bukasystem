@@ -1,0 +1,72 @@
+
+
+/*
+*
+ * Capa Settings
+*
+*/
+
+@import 'settings/settings';
+
+
+/*
+*
+ * Capa Tools
+*
+*/
+
+@import 'tools/mixins';
+@import 'tools/functions';
+
+
+/*
+*
+ * Capa Generica
+*
+*/
+
+@import 'generics/generics';
+
+
+/*
+*
+ * Capa Tags
+*
+*/
+
+@import 'tags/tags';
+
+
+/*
+*
+ * Capa Objetos
+*
+*/
+
+
+
+/*
+*
+ * Capa Componentes
+*
+*/
+
+@import 'components/c-header';
+@import 'components/c-basic-components';
+@import 'components/c-navbar';
+@import 'components/c-about-us';
+@import 'components/c-about-services';
+@import 'components/c-line-numbers';
+@import 'components/c-about-portfolio';
+@import 'components/c-testimonials';
+@import 'components/c-blog';
+@import 'components/c-contact';
+@import 'components/c-footer';
+
+/*
+*
+ * Capa Utilidades
+*
+*/
+
+@import 'utilities/utilities';

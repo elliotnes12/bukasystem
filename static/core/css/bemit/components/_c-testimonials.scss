@@ -1,0 +1,45 @@
+
+
+/* ----------------------------------------------------------------
+     [ Start Testimonials ]
+-----------------------------------------------------------------*/
+
+.testimonials{
+
+	&.minimal{
+
+		.item{
+
+			p{
+				color: #8a8a8a;
+			}
+		}
+	}
+
+	.icon{
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+
+	.item{
+		
+		p{
+			font-size: 16px;
+			font-family: inherit;
+			font-style: italic;
+			color: #ccc;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+		}
+
+		h6{
+			margin-bottom: 5px;
+		}
+
+		h5{
+			font-weight: 300;
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+	}
+}

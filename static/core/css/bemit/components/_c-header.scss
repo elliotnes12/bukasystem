@@ -1,0 +1,94 @@
+
+
+
+/* ----------------------------------------------------------------
+     [ Start Header ]
+-----------------------------------------------------------------*/
+
+.header{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+
+	.caption{
+
+		h6{
+			font-size: 20px;
+			letter-spacing: 2px;
+		}
+
+		h1{
+			margin: 10px 0;
+			font-size: 60px;
+			font-weight: 700;
+			font-family: inherit;
+			word-spacing: 2px;
+			letter-spacing: 2px;
+		}
+
+		p{
+			font-size: 15px;
+			font-weight: 300;
+			color: #eee;
+			letter-spacing: 1px;
+			word-spacing: 2px;
+		}
+
+		.social{
+
+			a{
+				color: #fff;
+				font-size: 12px;
+				margin: 0 10px;
+			}
+		}
+
+		.butn{
+			color: #fff;
+			padding: 12px 40px;
+			border: 1px solid #eee;
+			border-radius: 30px;
+			font-size: 13px;
+			letter-spacing: 1px;
+			transition: all .5s;
+
+			&:hover{
+				background: #eee;
+				color: #111;
+			}
+		}
+	}
+
+	#particles-js{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.bg-vid{
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	&.creative{
+
+		.svg{
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+
+			svg{
+				fill: #fff;
+				width: 101%;
+			}
+		}
+	}
+}

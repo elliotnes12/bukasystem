@@ -1,0 +1,57 @@
+
+//Font-size Global
+
+$font-size:16px;
+
+
+//Parrafos
+$parrafo-color:#666;
+$parrafo-margin:8px 0px 20px;
+$parrafo-family:'VW Text';
+
+
+
+//Botones
+
+/*Boton Light*/
+
+$btn-light-background:#006384;
+$btn-light-color:#fff;
+
+/*Hover btn light*/
+
+$btn-light-background-hover:#b9c900;
+$btn-light-color-hover:#fff;
+
+/*Active btn light*/
+
+$btn-light-background-active:#a8adb3;
+$btn-light-color-active:#006384;
+
+
+
+/*Boton Darken*/
+
+$btn-darken-background:#fff;
+$btn-darken-color:#006384;
+
+/*Hover btn Darken*/
+
+$btn-darken-background-hover:#b9c900;
+$btn-darken-color-hover:#fff;
+
+/*Active btn Darken*/
+
+$btn-darken-background-active:#a8adb3;
+$btn-darken-color-active:#fff;
+
+
+$mobile-xs-screen: 480px;
+$tablet-sm-screen: 767px;
+$desk-md-screen: 991px;
+
+
+/*Contact*/
+
+$bg-contact-btn:#00B1EB;
+$border-contact-btn:#00B1EB;

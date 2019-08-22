@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+ <html lang="es-MX">
+
+    <head>
+
+        {% load google_analytics_tags %}
+        {% load static %}
+
+    	
+        <!-- Metas -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Language" content="es-mx"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Servicios de desarrollo de soluciones empresariales a la medida en movil y web">
+        <meta name="keywords" content="Soluciones empresariales, sistemas para tu negocio, sistemas para tu empresa, empresas,diseño web, diseño móvil, desarrollo web, desarrollo móvil, diseno, programación web, programación móvil, desarrollo android, desarrollo ios, programación de aplicaciones,campañas adwords, medición, analytics, google analytics, implementación de código, Analisis de SEO, implementación de SEO, marketing digital, integración de plataformas, agencia web">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="expires" content="1" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=IE8" />
+
+        <meta property="og:url" content="https://www.bukasystem.com" />
+        <meta property="og:title" content="Desarrollo móvil y web | Web BukaSystem"/>
+        <meta property="og:description" content="Servicios de desarrollo de soluciones empresariales a la medida en movil y web." />
+
+        <base href="{{BASE_URL_HTML}}" />
+
+		<!-- BukaSystem Title  -->
+		<title>Consultoria Web SEO BukaSystem </title>
+
+        <!-- load vue -->
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+
+    
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+
+		<!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link rel="stylesheet" href="{% static 'home/css/plugins.css' %}" />
+
+        <!-- Core Style Css -->
+        <link rel="stylesheet" href="{% static 'home/css/main.css' %}" />
+
+    </head>
+
+    <body>
+
+    	<!-- =====================================
+    	==== Start Loading -->
+
+    	<div class="loading">
+            <div class="load-circle">
+            </div>
+        </div>
+        
+    	<!-- End Loading ====
+    	======================================= -->
+
+       
+    	<!-- =====================================
+    	==== Start Navbar -->
+
+		<nav class="navbar c-navbar navbar-expand-lg">
+			<div class="container">
+
+            <!-- Logo -->
+            <a class="companylogo" href="#">
+              <img src="{% static 'portfolio/img/logo-buka.png' %}" alt="logo-buka">       
+            </a>
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="c-navbar__icon-bar"><i class="fas fa-bars"></i></span>
+			  </button>
+
+			  <!-- navbar links -->
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="c-navbar__nav-link active" href="#" data-scroll-nav="0">Inicio</a>
+			      </li>
+			      <li class="nav-item">
+                    <a class="c-navbar__nav-link" href="#" data-scroll-nav="1">Nosotros</a>
+                  </li>
+			      <li class="nav-item">
+			        <a class="c-navbar__nav-link" href="#" data-scroll-nav="2">Servicio</a>
+			      </li>
+                  <li class="nav-item">
+                    <a class="c-navbar__nav-link" href="#" data-scroll-nav="3">Portafolio</a>
+                  </li>
+			      <li class="nav-item">
+			        <a class="c-navbar__nav-link" href="#" data-scroll-nav="6">Contacto</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+
+    	<!-- End Navbar ====
+    	======================================= -->
+
+
+    	<!-- =====================================
+    	==== Start Header -->
+    	<header class="header creative valign bg-img" data-scroll-index="0" data-overlay-dark="6" data-background="{{header.image.url}}" data-stellar-background-ratio="0.5">
+
+            <!-- particles -->
+            <div id="particles-js"></div>
+
+    		<div class="container">
+    			<div class="row">
+    				<div class="offset-lg-1 col-lg-10 text-center caption mt-50">
+                        <h6>bienvenido</h6>
+                        <h1 class="cd-headline">
+                           {{header.title}}
+                        </h1>
+                        <p>{{header.description | safe}}</p>
+                        <div class="social mt-15">
+                            <a href="{{URL_FACEBOOK}}" class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#0" class="icon inactive">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#0" class="icon inactive">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#0" class="icon inactive">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#0" class="icon inactive">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <a href="#0" class="butn mt-30" data-scroll-nav="6">Contactanos</a>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+
+    	<!-- End Header ====
+    	======================================= -->
+
+
+
+        <!-- =====================================
+        ==== Start about us -->
+
+        <section class="c-about-us section-padding" data-scroll-index="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="c-about-us__hero-img mb-md50">
+                            <div class="c-about-us__img">
+                                <img src="{{somos.image.url}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="c-about-us__content">
+                            <h2 class="c-about-us__h2" data-title="about-us">{{somos.title}}</h2>
+                            {{somos.description | safe}}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- End About us ====
+        ======================================= -->
+
+
+        <!-- =====================================
+        ==== Start Services -->
+
+        <section class="c-about-services section-padding bg-gray" data-scroll-index="2">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="section-head text-center col-lg-12">
+                        <h2>Servicios</h2>
+                        <span><i></i><i></i><i></i></span>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="c-about-services__item mb-md30">
+                            <span class="c-about-services__icon ti-gallery"></span>
+                            <h6>User Experience</h6>
+                            <p>
+                             Podemos ayudarte a mejorar el diseño y la usabilidad de tu web
+                           </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="c-about-services__item mb-30">
+                            <span class="c-about-services__icon ti-package"></span>
+                            <h6>Dise&ntilde;os a tu medida</h6>
+                            <p>Gestinamos sistemas de acuerdo a tus necesidades</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="c-about-services__item mb-30">
+                            <span class="c-about-services__icon ti-dashboard"></span>
+                            <h6>Personalizaciones</h6>
+                            <p>Contamos con multiples personalizaciones en multiples plataformas</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="c-about-services__item">
+                            <span class="c-about-services__icon ti-comments-smiley"></span>
+                            <h6>Soporte</h6>
+                            <p>Contamos con soporte altamente calificado para que se te brinde la mejor asesor&iacute;a </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- End Services ====
+        ======================================= -->
+
+
+        <!-- =====================================
+        ==== Start Numbers -->
+
+        <div class="c-numbers numbers bg-img bg-fixed" data-overlay-dark="5" data-background="img/1.jpg">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item text-center">
+                            <span class="c-numbers__icon ti-shield"></span>
+                            <h4 class="count">5000</h4>
+                            <h6 data-title="Liens Of Code">Lines de C&oacute;digo</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item text-center mb-md50">
+                            <span class="c-numbers__icon ti-layers-alt"></span>
+                            <h4 class="count">3</h4>
+                            <h6>Proyectos completados</h6>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- End Numbers ====
+        ======================================= -->
+
+
+        <!-- =====================================
+        ==== About us portfolio -->
+
+        <section class="works section-padding" data-scroll-index="3">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="section-head text-center col-lg-12">
+                        <h2>Portafolio</h2>
+                        <span><i></i><i></i><i></i></span>
+                    </div>
+
+                    <!-- filter links -->
+                    <div class="filtering text-center mb-20 col-sm-12">
+                        <div class="filter">
+                        <span data-filter="*" class="active">All</span>
+                            {% for categoria in catprojects %}
+                              <span data-filter='.{{categoria.slug}}'>{{categoria.name}}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <!-- gallery -->
+                    <div class="gallery text-center full-width">
+                        <!-- gallery item -->
+
+                         {% for project in projects %}
+                        <!-- gallery item -->
+                        <div class="col-lg-3 col-md-6 items {{project.categoria.slug}}">
+                            <div class="item-img">
+                                <img src="{{ project.image.url }}" alt="img-project-success">
+                                <div class="item-img-overlay valign">
+                                    <div class="overlay-info full-width vertical-center">
+                                        <h6>{{project.title}}</h6>
+                                        <a href="{{ project.image.url }}" class="popimg">
+                                            <span class="icon ti-zoom-in"></span>
+                                        </a>
+                                        {%if project.link %}
+                                        <a href="{{project.link}}">
+                                            <span class="icon ti-link"></span>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     {% endfor %}
+                            
+
+
+                        <div class="clearfix"></div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- End About portfolio ====
+        ======================================= -->
+
+
+
+        <!-- End Blog ====
+        ======================================= -->
+
+
+        <!-- =====================================
+        ==== Start Contact -->
+
+        <section class="contact section-padding" id="contact" data-scroll-index="6">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="section-head text-center col-lg-12">
+                        <h2>Contactanos</h2>
+                        <span><i></i><i></i><i></i></span>
+                    </div>
+
+                    <div class="offset-lg-1 col-lg-10">
+                        <form class="form" id="contact-form" method="post" action="contact.php">
+
+                            <input type="hidden" id="token" value="{{csrf_token}}" />
+                            <div v-bind:style="{ backgroundColor: errbgColorm,color:errcolorm,borderColor:errborm,display:displaym}" class="o-form-mensaje">
+                               <span v-html="log"></span>
+                               <span v-on:click="cancel" class="o-form-mensaje__cancel"><img src="{% static 'portfolio/img/cancel.png' %}" alt="close" /></span>
+                            </div>
+                            <div class="controls">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_name" v-model="name" type="text" placeholder="Nombre" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" v-model="email" placeholder="Email" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="form_subject" type="text" v-model="subject" placeholder="Asunto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="form_message" v-model="mensaje" placeholder="Mensaje" rows="4" required="required"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 text-center">
+                                        <button data-scroll-nav="6" v-on:click="contact"  type="submit"><span>Enviar</span></button>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- End Contact ====
+        ======================================= -->
+
+
+        <!-- =====================================
+        ==== Start Footer -->
+
+        <footer class="bg-img bg-fixed" data-overlay-dark="8" data-background="img/3.jpg">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <span class="icon ti-mobile"></span>
+                            <h6>Phone</h6>
+                            <p>+5571009021</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <span class="icon ti-map"></span>
+                            <h6>Address</h6>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <span class="icon ti-email"></span>
+                            <h6>Email</h6>
+                            <p>bukasystem@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12">
+                            <div class="copy text-center">
+                                <div class="social">
+                                    <a href="{{URL_FACEBOOK}}" class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#0" class="icon inactive">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#0" class="icon inactive">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#0" class="icon inactive">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                    <a href="#0" class="icon inactive">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <p>&copy; 2018 UI-ThemeZ. All Rights Reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End Footer ====
+        ======================================= -->
+       
+        <!-- jQuery -->
+        <script src="{% static 'home/js/jquery-3.0.0.min.js' %}"></script>
+        <script src="{% static 'home/js/jquery-migrate-3.0.0.min.js' %}"></script>
+
+
+        <script src="{% static 'home/js/contact-vue.js' %}"></script>
+
+        <!-- popper.min -->
+        <script src="{% static 'home/js/popper.min.js' %}"></script>
+
+        <!-- bootstrap -->
+        <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+
+        <!-- animated.headline -->
+        <script src="{% static 'home/js/animated.headline.js' %}"></script>
+
+        <!-- scrollIt -->
+        <script src="{% static 'home/js/scrollIt.min.js' %}"></script>
+
+        <!-- jquery.waypoints.min -->
+        <script src="{% static 'home/js/jquery.waypoints.min.js' %}"></script>
+
+        <!-- jquery.counterup.min -->
+        <script src="{% static 'home/js/jquery.counterup.min.js' %}"></script>
+
+        <!-- owl carousel -->
+        <script src="{% static 'home/js/owl.carousel.min.js' %}"></script>
+
+        <!-- jquery.magnific-popup js -->
+        <script src="{% static 'home/js/jquery.magnific-popup.min.js' %}"></script>
+
+        <!-- stellar js -->
+        <script src="{% static 'home/js/jquery.stellar.min.js' %}"></script>
+
+        <!-- particles.min js -->
+        <script src="{% static 'home/js/particles.min.js' %}"></script>
+
+        <!-- app js -->
+        <script src="{% static 'home/js/app.js' %}"></script>
+
+        <!-- isotope.pkgd.min js -->
+        <script src="{% static 'home/js/isotope.pkgd.min.js' %}"></script>
+
+        <!-- validator js -->
+        <script src="{% static 'home/js/validator.js' %}"></script>
+
+        <!-- custom scripts -->
+        <script src="{% static 'home/js/scripts.js' %}"></script>
+
+        <script>
+
+        (function(document,window){
+
+           window.onload = function(){
+                var script = document.querySelectorAll('.inactive');
+                [].forEach.call(script, function(enlace) {
+               
+                enlace.onclick = function (event){
+                   event.preventDefault();
+                }
+              });
+           }
+        })(document,window)
+
+        </script>
+    </body>
+</html>

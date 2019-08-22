@@ -1,0 +1,200 @@
+/* ----------------------------------------------------------------
+     [ 01 Start Basics ]
+-----------------------------------------------------------------*/
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.section-head {
+    margin-bottom: 80px;
+}
+
+.section-head h2 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-head span {
+    position: relative;
+}
+
+.section-head span:after,
+.section-head span:before {
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    top: 9px;
+    background: #555;
+}
+
+.section-head span:after {
+    background: linear-gradient(to right, transparent, #555);
+    right: 0;
+}
+
+.section-head span:before {
+    background: linear-gradient(to left, transparent, #555);
+    left: 0;
+}
+
+.section-head span i {
+    background: #555;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    position: relative;
+    z-index: 3;
+}
+
+.bg-gray {
+    background: #f7f7f7;
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.position-re {
+    position: relative;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.valign {
+    display: flex;
+    align-items: center;
+}
+
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 15px;
+    line-height: .7;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background: transparent;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #eee;
+}
+
+.cd-headline {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-headline {
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-headline {
+        font-size: 6rem;
+    }
+}
+
+.cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.cd-words-wrapper b.is-visible {
+    position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+    opacity: 0;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+
+/* xclip */
+
+.cd-headline.clip span {
+    display: inline-block;
+    padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    /* line */
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 2px;
+    height: 70%;
+    background-color: #aebcb9;
+}
+
+.cd-headline.clip b {
+    opacity: 0;
+}
+
+.cd-headline b.is-visible {
+    opacity: 1;
+}
+
+.works .filtering .active {
+    background: #111;
+    -webkit-box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.works .filtering span {
+    margin: 0 5px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}

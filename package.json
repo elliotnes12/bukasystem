@@ -1,0 +1,41 @@
+{
+  "name": "grapesjs-plugin-carousel",
+  "version": "0.3.395",
+  "description": "GrapesJS Plugin Bootstrap Carousel",
+  "main": "dist/output.js",
+  "scripts": {
+    "lint": "eslint src",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "build": "npm run v:patch && webpack --env.production",
+    "start": "webpack-dev-server --open --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotnes12/django-mypages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elliotnes12/django-mypages/issues"
+  },
+  "homepage": "https://github.com/elliotnes12/django-mypages#readme",
+  "dependencies": {
+    "path": "^0.12.7",
+    "vue": "^2.6.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

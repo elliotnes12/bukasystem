@@ -1,0 +1,1 @@
+var ModalAlert=function(){function o(){this.clmodal=""}return o.prototype.modal=function(o){void 0===o&&(o="");var l=document.querySelector("body");console.log(l)},o}();!function(o,l){o.modal=o.$modal=new ModalAlert,modal.modal()}(window,alert);

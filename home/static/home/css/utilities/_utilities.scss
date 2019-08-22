@@ -1,0 +1,83 @@
+
+  @media screen and (max-width: 991px) {
+    .mb-md50 {
+      margin-bottom: 50px;
+    }
+  
+    .mb-md30 {
+      margin-bottom: 30px;
+    }
+  
+    .mb-md0 {
+      margin-bottom: 0;
+    }
+  
+    .bgimg-height {
+      height: 400px;
+    }
+  
+    .bg-fixed {
+      background-attachment: scroll !important;
+    }
+  
+    .navbar {
+      padding-left: 15px;
+    }
+    .navbar .navbar-collapse {
+      max-height: 340px;
+      overflow: auto;
+      background: #111;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .navbar .nav-link {
+      margin: 10px auto !important;
+    }
+    .navbar .nav-scroll .navbar-collapse .nav-link {
+      color: #fff !important;
+    }
+    .navbar .nav-scroll .navbar-collapse .nav-link:after {
+      background: #fff;
+    }
+  
+    .header {
+      background-attachment: scroll !important;
+      background-position: 50% 0% !important;
+    }
+    .header .caption h1 {
+      font-size: 30px;
+    }
+  
+    .hero .hero-img:after {
+      display: none;
+    }
+  
+    .hero .content {
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .mb-sm50 {
+      margin-bottom: 50px;
+    }
+  
+    .mb-sm30 {
+      margin-bottom: 30px;
+    }
+  
+    .header .caption h1 {
+      font-size: 25px;
+    }
+    .header .caption p {
+      font-size: 12px;
+    }
+  
+    .portfolio .filtering span {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .section-head h3 {
+      font-size: 20px;
+    }
+  }

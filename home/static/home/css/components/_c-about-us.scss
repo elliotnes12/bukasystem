@@ -1,0 +1,64 @@
+ /* ----------------------------------------------------------------
+       [ About us ]
+  -----------------------------------------------------------------*/
+ 
+ .c-about-us {
+     position: relative;
+     &__content {
+         padding-left: 30px;
+         h2 {
+             font-weight: 600;
+             margin-bottom: 10px;
+         }
+         span {
+             color: #555;
+             font-weight: 500;
+             margin: 10px 0 15px;
+         }
+     }
+     &__hero-img {
+         position: relative;
+         &::after {
+             background-image: url(../img/dots.png);
+             background-repeat: repeat;
+             content: '';
+             width: 90%;
+             position: absolute;
+             top: -200%;
+             bottom: -200%;
+             left: 0;
+             z-index: -1;
+         }
+     }
+     &__img {
+         padding: 0 30px 30px 15px;
+         position: relative;
+         &::before {
+             content: '';
+             position: absolute;
+             top: 30px;
+             right: 0;
+             left: 45px;
+             bottom: 0;
+             border: 10px solid #eee;
+         }
+         img {
+             position: relative;
+             z-index: 2;
+         }
+     }
+ }
+ 
+ .hero .wave {
+     position: absolute;
+     top: -100px;
+     left: -5%;
+     width: 110%;
+     height: 100px;
+     background-image: url(../img/wave.svg);
+     background-size: cover;
+     z-index: 1;
+ }
+ /* ----------------------------------------------------------------
+       [ End Hero ]
+  -----------------------------------------------------------------*/
