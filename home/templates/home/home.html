@@ -72,7 +72,7 @@
 
             <!-- Logo -->
             <a class="companylogo" href="#">
-              <img src="{% static 'portfolio/img/logo-buka.png' %}" alt="logo-buka">       
+              <img src="{% static 'home/img/logo-buka.png' %}" alt="logo-buka">       
             </a>
 
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -349,7 +349,7 @@
                             <input type="hidden" id="token" value="{{csrf_token}}" />
                             <div v-bind:style="{ backgroundColor: errbgColorm,color:errcolorm,borderColor:errborm,display:displaym}" class="o-form-mensaje">
                                <span v-html="log"></span>
-                               <span v-on:click="cancel" class="o-form-mensaje__cancel"><img src="{% static 'portfolio/img/cancel.png' %}" alt="close" /></span>
+                               <span v-on:click="cancel" class="o-form-mensaje__cancel"><img src="{% static 'home/img/cancel.png' %}" alt="close" /></span>
                             </div>
                             <div class="controls">
 

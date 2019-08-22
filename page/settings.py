@@ -24,10 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')dl-p39f8kt4h8^w^^*p))kgez3&#mut@qs90&+9&o=0mwu!x3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-HomeTitle = 'Consultoria Web BukaSystem en metodologia agil'
+DEBUG = False
 
-if DEBUG == True:
+if DEBUG == False:
     ALLOWED_HOSTS = ['*']
     BASE_URL = '127.0.0.1'
 else:
@@ -151,8 +150,6 @@ USE_TZ = True
 if DEBUG: 
     STATIC_URL = '/static/' 
 else:
-    AWS_ACCESS_KEY_ID = ''
-    AWS_SECRET_ACCESS_KEY = ''
     AWS_STORAGE_BUCKET_NAME = 'static-bukasystem'
     AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
     AWS_S3_OBJECT_PARAMETERS = {

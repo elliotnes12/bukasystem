@@ -4,10 +4,10 @@ from .models import Sections,ProjectCategory,Project
 
 
 class NotFoundException(TemplateView):
-      template_name = "portfolio/404.html"
+      template_name = "home/404.html"
 
 class HomeView(TemplateView):
-     template_name = "home.html"
+     template_name = "home/home.html"
 
      def get(self,request,*args,**kwargs):
          header = Sections.objects.get(slug = 'header')
